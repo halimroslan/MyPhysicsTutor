@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="ms"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;My Physics Tutor by Sir Halim&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fade-enter { opacity: 0; transform: translateY(10px); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fade-enter-active { opacity: 1; transform: translateY(0); transition: opacity 300ms, transform 300ms; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fade-exit { opacity: 1; transform: translateY(0); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fade-exit-active { opacity: 0; transform: translateY(-10px); transition: opacity 300ms, transform 300ms; pointer-events: none;}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body class="bg-[#090014] text-white font-sans relative overflow-x-hidden selection:bg-purple-500/30 min-h-screen flex flex-col"&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="fixed inset-0 pointer-events-none z-0 opacity-20"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 40px 40px;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="fixed top-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full bg-purple-900/40 blur-[120px] pointer-events-none z-0"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="fixed bottom-[-10%] right-[-10%] w-[600px] h-[600px] rounded-full bg-blue-900/30 blur-[150px] pointer-events-none z-0"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="relative z-10 flex justify-between items-center px-6 md:px-12 py-6 border-b border-white/5 bg-[#090014]/50 backdrop-blur-md"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="flex items-center gap-2 cursor-pointer" onclick="window.showMainView()"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="https://drive.google.com/thumbnail?id=17K0EGgCdM5gQD30RhMQ29IuOo6TvlvaR&amp;sz=w200" alt="PT Logo" class="w-10 h-10 rounded-xl shadow-[0_0_15px_rgba(168,85,247,0.5)] object-cover" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="font-bold text-xl hidden sm:block tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>My Physics Tutor</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button id="btn-logout" onclick="window.handleLogout()" class="hidden px-6 py-2 rounded-full border border-pink-500/50 hover:bg-pink-500/20 text-pink-200 transition-all font-medium text-sm items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Log Keluar &lt;i data-lucide="log-out" class="w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button id="btn-login" onclick="window.showModal()" class="flex px-6 py-2 rounded-full border border-purple-500/50 hover:bg-purple-500/20 text-purple-200 transition-all font-medium text-sm items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Log Masuk &lt;span class="italic text-xs text-purple-300/70"&gt;Login&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="relative z-10 w-full flex-grow flex flex-col items-center"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="main-view" class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-16 flex flex-col items-center transition-all duration-300"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-12 sm:mb-16 max-w-3xl relative px-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 sm:mb-6 tracking-tight leading-tight relative z-10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>My Physics Tutor &lt;br /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400 text-3xl sm:text-4xl md:text-5xl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>by Sir Halim</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-wrap justify-center items-center gap-2 sm:gap-3 text-xs sm:text-sm md:text-base font-medium text-gray-300 bg-white/5 py-2 px-4 sm:py-3 sm:px-6 rounded-full border border-white/10 backdrop-blur-sm shadow-xl inline-flex relative z-10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span&gt;Guru Cemerlang Fizik&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="w-1.5 h-1.5 rounded-full bg-gray-500"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span&gt;Edufluencer&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="w-1.5 h-1.5 rounded-full bg-gray-500"&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="flex items-center gap-1.5 text-gray-100"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 384 512" fill="currentColor" class="text-white mb-[2px]"&gt;&lt;path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/&gt;&lt;/svg&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>Apple Learning Coach</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="w-full max-w-4xl mb-16 sm:mb-24 group px-2 sm:px-0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div onclick="window.showLabView()" class="relative p-[1px] rounded-2xl sm:rounded-3xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] transition-all duration-500 cursor-pointer overflow-hidden transform hover:-translate-y-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 blur-xl group-hover:opacity-100 opacity-0 transition-opacity duration-500"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="relative bg-[#100326] backdrop-blur-xl rounded-[15px] sm:rounded-[23px] p-6 sm:p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8 h-full"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="flex-1 text-center md:text-left"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="inline-flex items-center gap-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-white/10 text-pink-300 text-xs sm:text-sm font-semibold mb-3 sm:mb-4 border border-pink-500/30"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;i data-lucide="beaker" class="w-3 h-3 sm:w-4 sm:h-4"&gt;&lt;/i&gt; Modul Interaktif Baru</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-3 text-white"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>My Home Physics Lab</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-gray-300 text-sm sm:text-lg"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span class="font-bold"&gt;Jom buat eksperimen wajib dalam Fizik secara maya!&lt;/span&gt;&lt;br/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span class="italic text-gray-400 text-xs sm:text-base"&gt;Let's do compulsory Physics experiments virtually!&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="shrink-0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white text-purple-900 flex items-center justify-center shadow-[0_0_30px_rgba(255,255,255,0.3)] group-hover:scale-110 group-hover:shadow-[0_0_40px_rgba(255,255,255,0.5)] transition-all duration-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;i data-lucide="arrow-right" class="w-8 h-8 sm:w-10 sm:h-10"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="w-full max-w-5xl relative px-2 sm:px-0"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="absolute top-[-30px] right-[-10px] sm:top-[-60px] sm:right-[0px] md:top-[-120px] md:right-[30px] z-0 pointer-events-none opacity-40 sm:opacity-70 md:opacity-100"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="relative w-[150px] sm:w-[250px] md:w-[350px]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;img<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>src="https://drive.google.com/thumbnail?id=1N6tE8c5iQXXY-l2OIZhUMfzLw0jOhH83&amp;sz=w800"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>alt="Sir Halim"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>class="w-full h-auto object-cover transform scale-x-100"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="w-full max-w-5xl mx-auto relative z-10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="text-center mb-8 sm:mb-10 flex flex-col items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-b from-purple-500/30 to-blue-500/10 border border-white/10 flex items-center justify-center mb-4 sm:mb-6 shadow-[0_0_20px_rgba(168,85,247,0.2)]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="book-open" class="text-purple-300 w-6 h-6 sm:w-7 sm:h-7"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2 drop-shadow-[0_4px_6px_rgba(0,0,0,0.8)]"&gt;Bidang Pembelajaran &amp; Pentaksiran&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-gray-400 italic text-sm sm:text-lg drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"&gt;Learning Area &amp; Assessment&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex justify-center gap-3 sm:gap-4 md:gap-8 mb-10 sm:mb-16 w-full max-w-sm sm:max-w-none mx-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button id="tab-form4" onclick="window.switchTab('form4')" class="flex-1 md:flex-none min-w-0 md:min-w-[200px] px-2 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 rounded-2xl md:rounded-3xl transition-all duration-500 ease-out flex flex-col items-center justify-center gap-1 bg-white text-[#090014] shadow-[0_0_40px_rgba(168,85,247,0.6)] scale-105 border border-white/50 relative z-10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight"&gt;Tingkatan 4&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-xs sm:text-sm md:text-lg italic text-gray-600 font-semibold"&gt;Form 4&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button id="tab-form5" onclick="window.switchTab('form5')" class="flex-1 md:flex-none min-w-0 md:min-w-[200px] px-2 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 rounded-2xl md:rounded-3xl transition-all duration-500 ease-out flex flex-col items-center justify-center gap-1 bg-white/5 backdrop-blur-md text-gray-400 border border-white/10 hover:bg-white/10 hover:scale-105 hover:text-white cursor-pointer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-lg sm:text-2xl md:text-3xl font-bold tracking-tight"&gt;Tingkatan 5&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-xs sm:text-sm md:text-lg italic text-gray-500"&gt;Form 5&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div id="topics-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 relative z-10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="lab-view" class="w-full max-w-5xl mx-auto px-4 sm:px-6 py-4 flex flex-col hidden opacity-0 transition-all duration-300"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onclick="window.showMainView()" class="self-start mb-8 flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl transition-colors text-gray-300 hover:text-white group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="arrow-left" class="w-4 h-4 group-hover:-translate-x-1 transition-transform"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Kembali ke Laman Utama</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-center mb-10 flex flex-col items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-pink-500/30 to-purple-500/10 border border-pink-500/20 flex items-center justify-center mb-6 shadow-[0_0_30px_rgba(236,72,153,0.2)]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i data-lucide="beaker" class="text-pink-300 w-8 h-8 sm:w-10 sm:h-10"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>My Home Physics Lab</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Senarai Eksperimen Wajib Fizik. Jalankan penyiasatan dan pemodelan saintifik anda secara maya di sini.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-center gap-3 sm:gap-4 md:gap-8 mb-10 w-full max-w-sm sm:max-w-none mx-auto border-b border-white/10 pb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button id="tab-lab-form4" onclick="window.switchLabTab('form4')" class="flex-1 md:flex-none min-w-0 md:min-w-[180px] px-2 py-3 sm:px-6 sm:py-4 rounded-xl transition-all duration-300 ease-out flex flex-col items-center justify-center gap-1 bg-pink-500/20 text-pink-100 border border-pink-500/50 shadow-[0_0_20px_rgba(236,72,153,0.3)]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="text-lg sm:text-xl font-bold"&gt;Tingkatan 4&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="text-xs sm:text-sm italic opacity-80"&gt;Form 4&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button id="tab-lab-form5" onclick="window.switchLabTab('form5')" class="flex-1 md:flex-none min-w-0 md:min-w-[180px] px-2 py-3 sm:px-6 sm:py-4 rounded-xl transition-all duration-300 ease-out flex flex-col items-center justify-center gap-1 bg-transparent text-gray-500 border border-transparent hover:text-gray-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="text-lg sm:text-xl font-bold"&gt;Tingkatan 5&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="text-xs sm:text-sm italic opacity-80"&gt;Form 5&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div id="lab-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;footer class="relative z-10 border-t border-white/10 mt-auto bg-[#060010] pt-16 pb-8 flex flex-col items-center"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="w-full max-w-3xl mx-auto px-6 mb-16 flex flex-col items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-3 mb-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="h-[1px] w-8 sm:w-12 bg-gradient-to-r from-transparent to-purple-500/50"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h4 class="text-gray-300 font-bold tracking-widest uppercase text-xs sm:text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Statistik Pelawat &lt;span class="italic font-normal text-gray-500 ml-1"&gt;Visitor Stats&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="h-[1px] w-8 sm:w-12 bg-gradient-to-l from-transparent to-purple-500/50"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="relative w-full min-h-[350px] py-10 sm:py-12 flex items-center justify-center bg-gradient-to-b from-white/[0.02] to-transparent rounded-3xl border border-white/5 overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.3)]"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="absolute inset-0 opacity-[0.35]"<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                     </span>style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg'); background-size: cover; background-position: center; filter: invert(1) contrast(1.5);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="absolute top-[52%] left-[77%] w-2 h-2 bg-pink-500 rounded-full shadow-[0_0_15px_#ec4899] animate-pulse"&gt;&lt;/div&gt; &lt;!-- Malaysia --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="absolute top-[35%] left-[48%] w-1.5 h-1.5 bg-blue-400 rounded-full shadow-[0_0_10px_#60a5fa] animate-ping" style="animation-delay: 1s"&gt;&lt;/div&gt; &lt;!-- Europe --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="absolute top-[40%] left-[22%] w-1.5 h-1.5 bg-purple-500 rounded-full shadow-[0_0_10px_#a855f7] animate-pulse" style="animation-delay: 0.5s"&gt;&lt;/div&gt; &lt;!-- US --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="absolute top-[70%] left-[85%] w-1 h-1 bg-cyan-400 rounded-full shadow-[0_0_8px_#22d3ee] animate-pulse" style="animation-delay: 1.5s"&gt;&lt;/div&gt; &lt;!-- Australia --&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;!-- Counter Display --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="relative z-10 flex flex-col items-center bg-[#090014]/60 backdrop-blur-xl px-8 py-6 rounded-2xl border border-white/10 shadow-2xl transform transition-transform hover:scale-105 min-w-[280px]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-2 mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_10px_#34d399]"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[10px] font-bold text-emerald-400 tracking-widest uppercase"&gt;Sedang Aktif&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span id="visitor-counter" class="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 tracking-tight drop-shadow-sm my-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>--</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;span class="text-gray-300 text-sm mt-2 font-medium"&gt;Jumlah Akses &lt;span class="italic font-normal text-gray-400"&gt;Total Access&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Separator line --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="w-full h-[1px] bg-white/10 my-6"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;!-- Tracker Flag Counter --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="w-full flex flex-col items-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[10px] font-bold text-purple-300/70 tracking-widest uppercase mb-4"&gt;Lokasi Pelawat &lt;span class="italic font-normal"&gt;Visitor Locations&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;a href="https://info.flagcounter.com/Hw90" target="_blank" class="block hover:scale-105 transition-transform opacity-90 hover:opacity-100"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;!-- CSS Filter membalikkan warna untuk tema gelap --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;img src="https://s01.flagcounter.com/count2/Hw90/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0" class="rounded-md border border-white/10 shadow-lg" style="filter: invert(1) hue-rotate(180deg) brightness(1.2) contrast(1.1);"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="text-center text-sm text-gray-500"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="font-bold"&gt;© 2026 My Physics Tutor by Sir Halim.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="italic mt-1"&gt;Hak Cipta Terpelihara (All Rights Reserved).&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="login-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="bg-[#150a2e] border border-white/10 p-6 sm:p-8 rounded-2xl sm:rounded-3xl w-full max-w-md shadow-2xl relative"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onclick="window.hideModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>✕</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="w-16 h-16 rounded-full bg-purple-500/20 flex items-center justify-center mx-auto mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="lock" class="text-purple-400 w-7 h-7"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-2xl font-bold text-center mb-2"&gt;Log Masuk Akses&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-center text-gray-400 text-sm mb-6"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Masukkan katalaluan untuk sesi pembelajaran.</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;form onsubmit="window.handleLogin(event)" class="flex flex-col gap-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;input</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>type="password"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>id="password-input"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>placeholder="Katalaluan (Password)"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>class="bg-black/30 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-purple-500/50 text-white"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>/&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>id="submit-btn"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>type="submit"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>class="w-full bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-400 hover:to-blue-500 text-white font-bold py-3 rounded-xl transition-all shadow-[0_0_15px_rgba(168,85,247,0.4)] disabled:opacity-50 disabled:cursor-not-allowed"</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>Mula Sesi Pembelajaran</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/form&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="custom-alert-modal" class="fixed inset-0 z-[70] flex items-center justify-center p-4 bg-black/70 backdrop-blur-md hidden opacity-0 transition-opacity duration-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="bg-[#150a2e] border border-white/10 p-6 sm:p-8 rounded-2xl sm:rounded-3xl w-full max-w-sm shadow-2xl relative flex flex-col items-center text-center transform scale-95 transition-transform duration-300" id="custom-alert-box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="w-16 h-16 rounded-full bg-amber-500/20 flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(245,158,11,0.2)]"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="info" class="text-amber-400 w-8 h-8"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-xl sm:text-2xl font-bold mb-3 text-white"&gt;Harap Maklum&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p id="custom-alert-message" class="text-gray-300 text-sm sm:text-base mb-8 leading-relaxed"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onclick="window.hideCustomAlert()" class="w-full bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-6 rounded-xl transition-all border border-white/10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Tutup (Close)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="module-viewer" class="fixed inset-0 z-[60] flex items-center justify-center bg-black/90 backdrop-blur-md hidden opacity-0 transition-opacity duration-300"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="w-full h-full md:w-[95%] md:h-[95%] bg-white rounded-none md:rounded-2xl overflow-hidden shadow-2xl relative flex flex-col"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="bg-[#090014] text-white p-4 flex justify-between items-center border-b border-white/10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="flex items-center gap-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;img src="https://drive.google.com/thumbnail?id=17K0EGgCdM5gQD30RhMQ29IuOo6TvlvaR&amp;sz=w200" alt="PT Logo" class="w-8 h-8 rounded-lg shadow-md object-cover" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-bold hidden sm:block"&gt;My Physics Tutor Module&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button onclick="window.closeModule()" class="flex items-center gap-2 px-4 py-2 bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white rounded-lg transition-colors font-medium text-sm"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i data-lucide="x" class="w-4 h-4"&gt;&lt;/i&gt; Tutup Modul</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="flex-grow bg-gray-100 relative"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div id="module-loader" class="absolute inset-0 flex flex-col items-center justify-center bg-white z-10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="w-12 h-12 border-4 border-purple-200 border-t-purple-600 rounded-full animate-spin mb-4"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p class="text-gray-500 font-medium animate-pulse"&gt;Memuatkan modul...&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;iframe id="module-frame" src="" class="w-full h-full border-0" onload="document.getElementById('module-loader').style.display='none'"&gt;&lt;/iframe&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script type="module"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>import { getFirestore, doc, getDoc, setDoc, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Variabel Setup Firebase</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let db, auth, appId, currentUser;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Struktur Data (Topik Utama)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const form4Topics = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>id: 1,<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>my: "Bidang Pembelajaran 1: Pengukuran",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>en: "Measurement",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>icon: "target",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>color: "text-pink-400",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>bgGlow: "group-hover:shadow-[0_0_20px_rgba(244,114,182,0.3)]",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>isDeveloped: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>subNotes: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "1.1 Kuantiti Fizik", titleEn: "Physical Quantities", url: "https://script.google.com/macros/s/AKfycbxX9RnYmlw4S3ZdeJCLYMKG_OoS5emj1QJBTNmHAYWkaZHp-CuS05Mn5o0wBsTFUTAxiQ/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "1.2 Penyiasatan Saintifik", titleEn: "Scientific Investigation", url: "https://script.google.com/macros/s/AKfycbyuGQJ8wRl9tm6ZfCylFLAIrSND_yt_sOCbQmDpcac_Pns8jq_dvDRWu8bQjLCs_41gbQ/exec" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 2, my: "Bidang Pembelajaran 2: Daya dan Gerakan I", en: "Force and Motion I", icon: "activity", color: "text-blue-400", bgGlow: "group-hover:shadow-[0_0_20px_rgba(96,165,250,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 3, my: "Bidang Pembelajaran 3: Kegravitian", en: "Gravitation", icon: "atom", color: "text-purple-400", bgGlow: "group-hover:shadow-[0_0_20px_rgba(192,132,252,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 4, my: "Bidang Pembelajaran 4: Haba", en: "Heat", icon: "thermometer", color: "text-orange-400", bgGlow: "group-hover:shadow-[0_0_20px_rgba(251,146,60,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 5, my: "Bidang Pembelajaran 5: Gelombang", en: "Waves", icon: "waves", color: "text-cyan-400", bgGlow: "group-hover:shadow-[0_0_20px_rgba(34,211,238,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 6, my: "Bidang Pembelajaran 6: Cahaya dan Optik", en: "Light and Optics", icon: "lightbulb", color: "text-yellow-400", bgGlow: "group-hover:shadow-[0_0_20px_rgba(250,204,21,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const form5Topics = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 1, my: "Bidang Pembelajaran 1: Daya dan Gerakan II", en: "Force and Motion II", icon: "activity", color: "text-blue-500", bgGlow: "group-hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 2, my: "Bidang Pembelajaran 2: Tekanan", en: "Pressure", icon: "target", color: "text-emerald-400", bgGlow: "group-hover:shadow-[0_0_20px_rgba(52,211,153,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>id: 3,<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>my: "Bidang Pembelajaran 3: Elektrik",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>en: "Electricity",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>icon: "zap",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>color: "text-yellow-500",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>bgGlow: "group-hover:shadow-[0_0_20px_rgba(234,179,8,0.3)]",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>isDeveloped: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>subNotes: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "3.1 Arus &amp; Beza Keupayaan", titleEn: "Current &amp; Potential Difference", url: "https://script.google.com/macros/s/AKfycbw8J8U7QgzVQdNeYX0PGANEgaQwj1FtB1epkoQFeQmI5zqGXSstxJyGlGe9NO3hWV2k/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "3.2 Rintangan", titleEn: "Resistance", url: "https://script.google.com/macros/s/AKfycbyhb2vrt--V2gdyY-IqLCE90VGYxDOCsedE_SnE6VE21XtmZ4dxu5vZyNc81dcJHB0I/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "3.3 DGE &amp; Rintangan Dalam, r", titleEn: "EMF &amp; Internal Resistance, r", url: "https://script.google.com/macros/s/AKfycbzJRc8OupWOht-2_gIVKuft5Xz00uBnqPCC-cz0NdWyZUc3aDVqveGAQf3TH9Xjz4PNXg/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "3.4 Tenaga &amp; Kuasa Elektrik", titleEn: "Electrical Energy &amp; Power", url: "https://script.google.com/macros/s/AKfycbxpm95-MeqL6e-Eo87mRDC9vjfHhzzArNrevCq4XlLOM9PYa1GRl9RPDbq4_DcDh7GR/exec" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>subAssessments: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "Pentaksiran 3.1", titleEn: "Assessment 3.1", url: "https://script.google.com/macros/s/AKfycbzht0VyeB-BKgI2zR_yKwdewBjZ9C9-TkhHfBlidqqiAEfSEVxlrzPGx0sEvA7fkpV8rA/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "Pentaksiran 3.2", titleEn: "Assessment 3.2", url: "https://script.google.com/macros/s/AKfycbwYSTMzKnblmKoycBk75KyDVlxGI6DO4hG75kIwWcBIei-DvwQuIxSriL5Jnk7Fz8dhEA/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "Pentaksiran 3.3", titleEn: "Assessment 3.3", url: "https://script.google.com/macros/s/AKfycbySjea3b33OHxqd2foI9gJXLZKzFu5OFFGd_lLSr0MegRTnMqnyvGkWviPsdz9GzPnP/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "Pentaksiran 3.4", titleEn: "Assessment 3.4", url: "https://script.google.com/macros/s/AKfycbzo3sB3E8649LatICI9z32COoi0_zvqjJogIMqkz4QhArfAW_z5G1BjpLx3ExZdIiwLyQ/exec" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>id: 4,<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>my: "Bidang Pembelajaran 4: Keelektromagnetan",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>en: "Electromagnetism",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>icon: "magnet",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>color: "text-indigo-400",<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>bgGlow: "group-hover:shadow-[0_0_20px_rgba(129,140,248,0.3)]",</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>isDeveloped: true,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>subNotes: [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                  </span>{ title: "4.1 (a) Daya ke atas Konduktor Pembawa Arus", titleEn: "Force on a Current-Carrying Conductor", url: "https://script.google.com/macros/s/AKfycbxXNtyC4beTScEI6lyFNFof335pCjkf5n27LIpS-3tYd83OXqbYicFz9uUKGNqfazoI/exec" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 5, my: "Bidang Pembelajaran 5: Elektronik", en: "Electronics", icon: "cpu", color: "text-teal-400", bgGlow: "group-hover:shadow-[0_0_20px_rgba(45,212,191,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 6, my: "Bidang Pembelajaran 6: Fizik Nuklear", en: "Nuclear Physics", icon: "atom", color: "text-rose-500", bgGlow: "group-hover:shadow-[0_0_20px_rgba(244,63,94,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 7, my: "Bidang Pembelajaran 7: Fizik Kuantum", en: "Quantum Physics", icon: "microscope", color: "text-fuchsia-400", bgGlow: "group-hover:shadow-[0_0_20px_rgba(232,121,249,0.3)]" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Struktur Data (Eksperimen Makmal)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const form4Experiments = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "1.2.3", bm: "Menjalankan penyiasatan saintifik dan menulis laporan lengkap dengan menjalankan eksperimen bandul ringkas.", en: "Conduct a scientific investigation and write a complete report by conducting a simple pendulum experiment.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "2.3.2", bm: "Mengeksperimen untuk menentukan nilai pecutan graviti.", en: "Experiment to determine the value of gravitational acceleration.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "2.4.2", bm: "Mengeksperimen untuk mengenal pasti hubungan antara inersia dan jisim.", en: "Experiment to identify the relationship between inertia and mass.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "4.2.3", bm: "Mengeksperimen untuk menentukan: i) Muatan haba tentu air ii) Muatan haba tentu aluminium", en: "Experiment to determine: i) Specific heat capacity of water ii) Specific heat capacity of aluminium", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "4.3.3", bm: "Mengeksperimen untuk menentukan i) haba pendam tentu pelakuran ais ii) haba pendam tentu pengewapan air.", en: "Experiment to determine i) specific latent heat of fusion of ice ii) specific latent heat of vaporisation of water.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "4.4.2", bm: "Mengeksperimen untuk menentukan hubungan antara tekanan dan isi padu bagi suatu gas berjisim tetap pada suhu malar.", en: "Experiment to determine the relationship between pressure and volume of a fixed mass of gas at constant temperature.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "4.4.3", bm: "Mengeksperimen untuk menentukan hubungan antara isi padu dan suhu bagi suatu gas berjisim tetap pada tekanan malar.", en: "Experiment to determine the relationship between volume and temperature of a fixed mass of gas at constant pressure.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "4.4.4", bm: "Mengeksperimen untuk menentukan hubungan antara tekanan dan suhu bagi suatu gas berjisim tetap pada isi padu malar.", en: "Experiment to determine the relationship between pressure and temperature of a fixed mass of gas at constant volume.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "6.1.4", bm: "Mengeksperimen untuk menentukan indeks biasan, n bagi blok kaca atau perspeks.", en: "Experiment to determine the refractive index, n of a glass or perspex block.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "6.1.6", bm: "Mengeksperimen untuk menentukan indeks biasan menggunakan dalam nyata dan dalam ketara.", en: "Experiment to determine the refractive index using real depth and apparent depth.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "6.4.1", bm: "Mengeksperimen untuk mengkaji hubungan antara panjang fokus (f), jarak objek (u) dan jarak imej (v) bagi kanta nipis dengan menggunakan Formula Kanta.", en: "Experiment to study the relationship between focal length (f), object distance (u) and image distance (v) for a thin lens using the Lens Formula.", url: "" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const form5Experiments = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "1.4.2", bm: "Mengeksperimen untuk mencari hubungan antara daya, F dan pemanjangan spring, x.", en: "Experiment to find the relationship between force, F and extension of a spring, x.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "2.1.2", bm: "Mengeksperimen untuk mengkaji faktor-faktor yang mempengaruhi tekanan cecair.", en: "Experiment to study the factors affecting liquid pressure.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "2.3.1", bm: "Menentukan tekanan gas dengan menggunakan manometer.", en: "Determine gas pressure using a manometer.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "3.2.1", bm: "Membanding dan membeza konduktor Ohm dan konduktor bukan Ohm.", en: "Compare and contrast Ohmic and non-Ohmic conductors.", url: "https://script.google.com/macros/s/AKfycbyp3LmuDHpF8Cdd-L72fU1kgyCLN3MRSfnjQOZdH61DpUYR9rnjFvVZqvoM76-aKLZ1/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "3.2.4", bm: "Memerihalkan faktor yang mempengaruhi rintangan dawai, melalui eksperimen dan merumuskan R = ρl/A.", en: "Describe factors affecting the resistance of a wire through experiment and formulate R = ρl/A.", url: "https://script.google.com/macros/s/AKfycbyI5zWZFskFAEE5HtvOB6rp2MsTHR-GjCJFDldtUPIreCOTrKChIjnjc_FaFRgxfgAJ/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "3.3.3", bm: "Mengeksperimen untuk menentukan d.g.e. dan rintangan dalam sel kering.", en: "Experiment to determine e.m.f. and internal resistance of a dry cell.", url: "https://script.google.com/macros/s/AKfycbywEfS5A_VCj3xli17t02j1vQF-P2E9djpITmJvm5ixox94IT87DuohS9bmKxtdEL7zxA/exec" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "4.1.1", bm: "Menghuraikan kesan suatu konduktor pembawa arus dalam suatu medan magnet.", en: "Describe the effect of a current-carrying conductor in a magnetic field.", url: "" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ code: "4.1.3", bm: "Menerangkan faktor-faktor yang mempengaruhi magnitud daya yang bertindak ke atas konduktor pembawa arus dalam suatu medan magnet.", en: "Explain the factors that affect the magnitude of the force acting on a current-carrying conductor in a magnetic field.", url: "https://script.google.com/macros/s/AKfycbwnbvSk0gdCGK49oJ2fY0BDvhDRG5lbzak2TCSPdJNkFGAT2eZHi4ZPJipa7FmkHQe8/exec" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let activeTab = 'form4';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let activeLabTab = 'form4';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let isLoggedIn = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let timerInterval;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Mengambil IP Pengguna</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>async function getUserIP() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const controller = new AbortController();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const timeoutId = setTimeout(() =&gt; controller.abort(), 3000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const res = await fetch('https://api.ipify.org?format=json', { signal: controller.signal });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>clearTimeout(timeoutId);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const data = await res.json();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return data.ip.replace(/\./g, '_');<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.warn("Gagal mendapatkan IP:", e);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Inisialisasi Firebase</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>async function initFirebase() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const app = initializeApp(firebaseConfig);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>auth = getAuth(app);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>db = getFirestore(app);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (typeof __initial_auth_token !== 'undefined' &amp;&amp; __initial_auth_token) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>await signInWithCustomToken(auth, __initial_auth_token);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>await signInAnonymously(auth);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>onAuthStateChanged(auth, (user) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>currentUser = user;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.warn("Firebase fallback", e);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Logika Peringatan Kustom</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.showCustomAlert = function(msgHTML) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const modal = document.getElementById('custom-alert-modal');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const msgEl = document.getElementById('custom-alert-message');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const box = document.getElementById('custom-alert-box');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>msgEl.innerHTML = msgHTML;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>modal.classList.remove('hidden');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Animation</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>modal.classList.remove('opacity-0');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>box.classList.remove('scale-95');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>box.classList.add('scale-100');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 10);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.hideCustomAlert = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const modal = document.getElementById('custom-alert-modal');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const box = document.getElementById('custom-alert-box');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>modal.classList.add('opacity-0');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box.classList.remove('scale-100');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box.classList.add('scale-95');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>modal.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 300);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Inisialisasi Aplikasi</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>async function initApp() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>await initFirebase();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>checkSession();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderTopics(activeTab);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderLabTopics(activeLabTab);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>startTimer();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateVisitorCount();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Mengambil Jumlah Pelawat</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>async function updateVisitorCount() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const counterEl = document.getElementById('visitor-counter');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let currentCount = 1; // Nilai asal</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Baca dari local storage sebagai backup sementara</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>let localCount = localStorage.getItem('offline_visitor_count');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (localCount) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>currentCount = parseInt(localCount);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Jika database gagal dimuat, gunakan local storage sahaja</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (!db) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (!sessionStorage.getItem('has_counted')) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>currentCount++;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>localStorage.setItem('offline_visitor_count', currentCount.toString());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>sessionStorage.setItem('has_counted', 'true');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (counterEl) counterEl.innerText = currentCount.toLocaleString('en-US');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const statsRef = doc(db, 'artifacts', appId, 'public', 'data', 'stats', 'visitors');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const statsSnap = await getDoc(statsRef);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (statsSnap.exists()) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>currentCount = statsSnap.data().count;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (!sessionStorage.getItem('has_counted')) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>currentCount++;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>await setDoc(statsRef, { count: currentCount }, { merge: true });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>sessionStorage.setItem('has_counted', 'true');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (!sessionStorage.getItem('has_counted')) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>currentCount = currentCount &gt; 1 ? currentCount : 1;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>await setDoc(statsRef, { count: currentCount });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>sessionStorage.setItem('has_counted', 'true');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Kemas kini local backup</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('offline_visitor_count', currentCount.toString());</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (counterEl) counterEl.innerText = currentCount.toLocaleString('en-US');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.warn("Stat error:", e);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Fallback display jika berlaku ralat</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (counterEl) counterEl.innerText = currentCount.toLocaleString('en-US');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Memeriksa Sesi saat Dimuat</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function checkSession() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const isActive = localStorage.getItem('physics_session_active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const expiryTime = localStorage.getItem('password_expiry');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (isActive === 'true') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (expiryTime === 'master') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>isLoggedIn = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else if (expiryTime &amp;&amp; Date.now() &lt;= parseInt(expiryTime)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>isLoggedIn = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>localStorage.removeItem('physics_session_active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>localStorage.removeItem('password_expiry');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateAuthUI();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Memulai Penghitung Waktu Internal</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function startTimer() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (timerInterval) clearInterval(timerInterval);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>timerInterval = setInterval(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (!isLoggedIn) return;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const expiryTime = localStorage.getItem('password_expiry');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (expiryTime === 'master') return;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (expiryTime &amp;&amp; Date.now() &gt; parseInt(expiryTime)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>isLoggedIn = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>localStorage.removeItem('physics_session_active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>localStorage.removeItem('password_expiry');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>updateAuthUI();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>window.showCustomAlert('&lt;span class="font-bold text-white"&gt;Sesi anda telah tamat.&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="text-pink-400"&gt;Sistem telah dikunci untuk sesi ini.&lt;/span&gt;');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 1000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Menangani Pengiriman Login</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.handleLogin = async function(e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>e.preventDefault();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const passwordInput = document.getElementById('password-input').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const submitBtn = document.getElementById('submit-btn');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (passwordInput === 'H@lim8606441') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isLoggedIn = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('password_expiry', 'master');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('physics_session_active', 'true');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hideModal();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('password-input').value = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>updateAuthUI();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>startTimer();<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let durationMs = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (passwordInput === 'abc123') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>durationMs = 60 * 1000; // 1 minit</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else if (passwordInput === '#physicstutor123') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>durationMs = 150 * 24 * 60 * 60 * 1000; // 5 bulan (150 hari)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>window.showCustomAlert('&lt;span class="font-bold text-red-400"&gt;Katalaluan salah!&lt;/span&gt;');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>submitBtn.innerText = 'Mengesahkan Sistem...';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>submitBtn.disabled = true;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const userIP = await getUserIP();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const now = Date.now();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>let expiryTime = now + durationMs;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (db &amp;&amp; currentUser &amp;&amp; userIP) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const docRef = doc(db, 'artifacts', appId, 'public', 'data', 'ip_trials', userIP);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const docSnap = await getDoc(docRef);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (docSnap.exists()) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>const data = docSnap.data();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>if (now &gt; data.expiryTime) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>window.showCustomAlert('&lt;span class="font-bold text-red-400 text-lg"&gt;Akses Ditolak!&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;Alamat IP anda telah tamat tempoh untuk sesi ini. Anda tidak boleh log masuk lagi.');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>submitBtn.innerText = 'Mula Sesi Pembelajaran';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>submitBtn.disabled = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>// Update expiry base on current time + duration if within valid limit or extending limit</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>await setDoc(docRef, { expiryTime: expiryTime }, { merge: true });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>await setDoc(docRef, { expiryTime: expiryTime });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>let localExpiry = localStorage.getItem('password_expiry');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (localExpiry &amp;&amp; localExpiry !== 'master') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>if (now &gt; parseInt(localExpiry)) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>window.showCustomAlert('&lt;span class="font-bold text-red-400 text-lg"&gt;Akses Ditolak!&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;Sesi anda telah tamat tempoh sah.');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>submitBtn.innerText = 'Mula Sesi Pembelajaran';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>submitBtn.disabled = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isLoggedIn = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('password_expiry', expiryTime.toString());</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>localStorage.setItem('physics_session_active', 'true');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hideModal();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>document.getElementById('password-input').value = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>updateAuthUI();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>startTimer();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (error) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.error(error);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>window.showCustomAlert("Terdapat masalah pada sambungan pelayan. Sila cuba lagi.");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} finally {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>submitBtn.innerText = 'Mula Sesi Pembelajaran';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>submitBtn.disabled = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Menangani Logout</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.handleLogout = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>isLoggedIn = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>localStorage.removeItem('physics_session_active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>localStorage.removeItem('password_expiry');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateAuthUI();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Kontrol Modal</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.showModal = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('login-modal').classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; document.getElementById('password-input').focus(), 100);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.hideModal = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('login-modal').classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Navigasi Tampilan (Utama vs Makmal)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.showLabView = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const mainView = document.getElementById('main-view');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const labView = document.getElementById('lab-view');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>mainView.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>mainView.classList.replace('opacity-100', 'opacity-0');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>labView.classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>labView.classList.replace('opacity-0', 'opacity-100');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 10);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>window.scrollTo({ top: 0, behavior: 'smooth' });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.showMainView = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const mainView = document.getElementById('main-view');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const labView = document.getElementById('lab-view');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>labView.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>labView.classList.replace('opacity-100', 'opacity-0');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>mainView.classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>mainView.classList.replace('opacity-0', 'opacity-100');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 10);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>window.scrollTo({ top: 0, behavior: 'smooth' });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Memperbarui UI Autentikasi</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function updateAuthUI() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const loginBtn = document.getElementById('btn-login');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const logoutBtn = document.getElementById('btn-logout');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (isLoggedIn) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>loginBtn.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>loginBtn.classList.remove('flex');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>logoutBtn.classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>logoutBtn.classList.add('flex');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>loginBtn.classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>loginBtn.classList.add('flex');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>logoutBtn.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>logoutBtn.classList.remove('flex');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Klik Aksi yang Dilindungi</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.handleProtectedAction = function(type, urlTarget) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!isLoggedIn) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>window.showModal();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (type === 'modul' &amp;&amp; urlTarget &amp;&amp; urlTarget.trim() !== '') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>window.openModuleInFrame(urlTarget);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>window.showCustomAlert('&lt;span class="font-bold text-white text-lg"&gt;Modul sedang dibangunkan.&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;span class="italic text-gray-400"&gt;Module under development.&lt;/span&gt;');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Membuka Modul di Iframe secara aman</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.openModuleInFrame = function(url) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const viewer = document.getElementById('module-viewer');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const frame = document.getElementById('module-frame');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const loader = document.getElementById('module-loader');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>loader.style.display = 'flex';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>frame.src = url;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>viewer.classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>viewer.classList.remove('opacity-0');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 10);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Menutup Penampil Modul</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.closeModule = function() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const viewer = document.getElementById('module-viewer');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const frame = document.getElementById('module-frame');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>viewer.classList.add('opacity-0');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>viewer.classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>frame.src = '';<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}, 300);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Logika Perpindahan Tab (Silabus Utama)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.switchTab = function(tab) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>activeTab = tab;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const tabForm4 = document.getElementById('tab-form4');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const tabForm5 = document.getElementById('tab-form5');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const inactiveClasses = "flex-1 md:flex-none min-w-0 md:min-w-[200px] px-2 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 rounded-2xl md:rounded-3xl transition-all duration-500 ease-out flex flex-col items-center justify-center gap-1 bg-white/5 backdrop-blur-md text-gray-400 border border-white/10 hover:bg-white/10 hover:scale-105 hover:text-white cursor-pointer".split(' ');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const activeClasses = "flex-1 md:flex-none min-w-0 md:min-w-[200px] px-2 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 rounded-2xl md:rounded-3xl transition-all duration-500 ease-out flex flex-col items-center justify-center gap-1 bg-white text-[#090014] shadow-[0_0_40px_rgba(168,85,247,0.6)] scale-105 border border-white/50 relative z-10".split(' ');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>tabForm4.className = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>tabForm5.className = '';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (tab === 'form4') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>activeClasses.forEach(c =&gt; tabForm4.classList.add(c));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>inactiveClasses.forEach(c =&gt; tabForm5.classList.add(c));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tabForm4.innerHTML = `&lt;span class="text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight"&gt;Tingkatan 4&lt;/span&gt;&lt;span class="text-xs sm:text-sm md:text-lg italic text-gray-600 font-semibold"&gt;Form 4&lt;/span&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tabForm5.innerHTML = `&lt;span class="text-lg sm:text-2xl md:text-3xl font-bold tracking-tight"&gt;Tingkatan 5&lt;/span&gt;&lt;span class="text-xs sm:text-sm md:text-lg italic text-gray-500"&gt;Form 5&lt;/span&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>inactiveClasses.forEach(c =&gt; tabForm4.classList.add(c));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>activeClasses.forEach(c =&gt; tabForm5.classList.add(c));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tabForm4.innerHTML = `&lt;span class="text-lg sm:text-2xl md:text-3xl font-bold tracking-tight"&gt;Tingkatan 4&lt;/span&gt;&lt;span class="text-xs sm:text-sm md:text-lg italic text-gray-500"&gt;Form 4&lt;/span&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tabForm5.innerHTML = `&lt;span class="text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight"&gt;Tingkatan 5&lt;/span&gt;&lt;span class="text-xs sm:text-sm md:text-lg italic text-gray-600 font-semibold"&gt;Form 5&lt;/span&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderTopics(tab);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Logika Perpindahan Tab (Tampilan Makmal)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.switchLabTab = function(tab) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>activeLabTab = tab;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const tabLabForm4 = document.getElementById('tab-lab-form4');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const tabLabForm5 = document.getElementById('tab-lab-form5');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const inactiveClasses = "flex-1 md:flex-none min-w-0 md:min-w-[180px] px-2 py-3 sm:px-6 sm:py-4 rounded-xl transition-all duration-300 ease-out flex flex-col items-center justify-center gap-1 bg-transparent text-gray-500 border border-transparent hover:text-gray-300".split(' ');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const activeClasses = "flex-1 md:flex-none min-w-0 md:min-w-[180px] px-2 py-3 sm:px-6 sm:py-4 rounded-xl transition-all duration-300 ease-out flex flex-col items-center justify-center gap-1 bg-pink-500/20 text-pink-100 border border-pink-500/50 shadow-[0_0_20px_rgba(236,72,153,0.3)]".split(' ');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>tabLabForm4.className = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>tabLabForm5.className = '';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (tab === 'form4') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>activeClasses.forEach(c =&gt; tabLabForm4.classList.add(c));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>inactiveClasses.forEach(c =&gt; tabLabForm5.classList.add(c));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tabLabForm4.innerHTML = `&lt;span class="text-lg sm:text-xl font-bold"&gt;Tingkatan 4&lt;/span&gt;&lt;span class="text-xs sm:text-sm italic opacity-80"&gt;Form 4&lt;/span&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tabLabForm5.innerHTML = `&lt;span class="text-lg sm:text-xl font-bold"&gt;Tingkatan 5&lt;/span&gt;&lt;span class="text-xs sm:text-sm italic opacity-80"&gt;Form 5&lt;/span&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>inactiveClasses.forEach(c =&gt; tabLabForm4.classList.add(c));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>activeClasses.forEach(c =&gt; tabLabForm5.classList.add(c));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tabLabForm4.innerHTML = `&lt;span class="text-lg sm:text-xl font-bold"&gt;Tingkatan 4&lt;/span&gt;&lt;span class="text-xs sm:text-sm italic opacity-80"&gt;Form 4&lt;/span&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>tabLabForm5.innerHTML = `&lt;span class="text-lg sm:text-xl font-bold"&gt;Tingkatan 5&lt;/span&gt;&lt;span class="text-xs sm:text-sm italic opacity-80"&gt;Form 5&lt;/span&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderLabTopics(tab);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Memuat Grid Topik Utama</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderTopics(tab) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const topicsGrid = document.getElementById('topics-grid');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const topics = tab === 'form4' ? form4Topics : form5Topics;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>topicsGrid.innerHTML = topics.map(topic =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>let actionButtonsHTML = '';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Jika topik mengandungi sub-topik (seperti Elektrik T5 atau Pengukuran T4)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (topic.subNotes || topic.subAssessments) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>actionButtonsHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="mt-auto flex flex-col gap-4 pt-5 border-t border-white/5"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                            </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>${topic.subNotes &amp;&amp; topic.subNotes.length &gt; 0 ? `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="flex flex-col gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div class="flex items-center gap-2 mb-1 px-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;i data-lucide="play-circle" class="text-blue-400 w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span class="font-bold text-purple-200 text-sm"&gt;Nota &amp; Simulasi Digital &lt;span class="italic text-purple-300/70 font-normal text-[11px] ml-1"&gt;Notes &amp; Simulation&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>${topic.subNotes.map(sub =&gt; `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;button onclick="window.handleProtectedAction('modul', '${sub.url}')" class="w-full flex justify-between items-center py-2 px-3 rounded-lg bg-purple-500/10 hover:bg-purple-500/20 transition-colors text-purple-200 hover:text-white border border-purple-500/20 hover:border-purple-500/40 group/sub"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div class="text-left leading-tight"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div class="font-bold text-xs sm:text-sm"&gt;${sub.title}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div class="text-[10px] sm:text-[11px] italic text-purple-300/70 font-normal mt-0.5"&gt;${sub.titleEn}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="chevron-right" class="w-4 h-4 opacity-0 group-hover/sub:opacity-100 transition-opacity text-purple-400 shrink-0"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>`).join('')}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>` : ''}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="flex flex-col gap-2 mt-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>${topic.subAssessments &amp;&amp; topic.subAssessments.length &gt; 0 ? `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div class="flex items-center gap-2 mb-1 px-1"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;i data-lucide="file-check-2" class="text-pink-400 w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span class="font-bold text-gray-200 text-sm"&gt;Pentaksiran &lt;span class="italic text-gray-400 font-normal text-[11px] ml-1"&gt;Assessment&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div class="grid grid-cols-2 gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>${topic.subAssessments.map(sub =&gt; `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;button onclick="window.handleProtectedAction('modul', '${sub.url}')" class="w-full py-2 px-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors text-center text-gray-300 hover:text-white border border-transparent hover:border-white/10"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div class="flex flex-col items-center justify-center"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span class="font-bold text-xs sm:text-sm"&gt;${sub.title}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span class="text-[9px] sm:text-[10px] italic text-gray-400 font-normal mt-0.5"&gt;${sub.titleEn}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>`).join('')}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>` : `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;button onclick="window.handleProtectedAction('pentaksiran', null)" class="w-full flex justify-center items-center py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors text-sm group/btn border border-white/5"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="file-check-2" class="text-pink-400 w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span class="font-bold text-gray-200 group-hover/btn:text-white"&gt;Pentaksiran &lt;span class="italic text-gray-400 font-normal"&gt;Assessment&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>`}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Butang besar standard untuk topik biasa</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>actionButtonsHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="mt-auto flex flex-col gap-3 pt-5 border-t border-white/5"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button onclick="window.handleProtectedAction('modul', '${topic.modulUrl || ''}')" class="w-full flex justify-center items-center py-3 px-4 rounded-xl bg-purple-500/10 hover:bg-purple-500/20 transition-colors text-sm group/btn border border-purple-500/30"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div class="flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;i data-lucide="play-circle" class="text-blue-400 w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span class="font-bold text-purple-200 group-hover/btn:text-purple-100"&gt;Nota &amp; Simulasi Digital &lt;span class="italic text-purple-300/60 font-normal"&gt;Notes &amp; Simulation&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;button onclick="window.handleProtectedAction('pentaksiran', null)" class="w-full flex justify-center items-center py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors text-sm group/btn border border-white/5"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div class="flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;i data-lucide="file-check-2" class="text-pink-400 w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span class="font-bold text-gray-200 group-hover/btn:text-white"&gt;Pentaksiran &lt;span class="italic text-gray-400 font-normal"&gt;Assessment&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="group bg-[#150a2e]/60 backdrop-blur-md border border-white/5 rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 flex flex-col h-full relative overflow-hidden ${topic.bgGlow}"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>${!topic.isDeveloped ? `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="absolute top-4 right-4 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-3 py-1.5 rounded-lg backdrop-blur-md z-20 flex flex-col items-center text-center shadow-[0_0_15px_rgba(245,158,11,0.15)] pointer-events-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-[10px] sm:text-xs font-bold leading-none mb-1"&gt;Sedang dibangunkan&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-[9px] sm:text-[10px] italic leading-none opacity-80"&gt;Being developed&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>` : `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="absolute top-4 right-4 bg-cyan-500/20 border border-cyan-400/50 text-cyan-100 px-3 py-1.5 rounded-lg backdrop-blur-md z-20 flex flex-col items-center text-center shadow-[0_0_20px_rgba(34,211,238,0.6)] pointer-events-none animate-pulse"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-[10px] sm:text-xs font-bold leading-none mb-1 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"&gt;Baharu&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span class="text-[9px] sm:text-[10px] italic leading-none text-cyan-200"&gt;New&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>`}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="absolute -top-10 -right-10 w-32 h-32 opacity-20 blur-2xl rounded-full bg-current ${topic.color}"&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="mb-6 bg-white/5 w-12 h-12 rounded-xl flex items-center justify-center border border-white/5 shadow-inner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="${topic.icon}" class="${topic.color} w-6 h-6"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="flex-grow mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4 class="text-lg leading-snug mb-1 text-white font-bold"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>${topic.my}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;p class="text-sm text-gray-400 italic mb-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>${topic.en}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>${actionButtonsHTML}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}).join('');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (window.lucide) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>window.lucide.createIcons();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Memuat Grid Eksperimen Makmal</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderLabTopics(tab) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const labGrid = document.getElementById('lab-grid');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const experiments = tab === 'form4' ? form4Experiments : form5Experiments;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>labGrid.innerHTML = experiments.map(exp =&gt; `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="bg-[#100326]/80 backdrop-blur-md border border-white/10 rounded-2xl p-6 flex flex-col h-full transition-all duration-300 hover:border-pink-500/30 hover:shadow-[0_0_20px_rgba(236,72,153,0.15)] relative overflow-hidden group"&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>${!exp.url ? `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="absolute top-4 right-4 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-3 py-1.5 rounded-lg backdrop-blur-md z-20 flex flex-col items-center text-center pointer-events-none"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[10px] sm:text-xs font-bold leading-none mb-1"&gt;Sedang dibangunkan&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[9px] sm:text-[10px] italic leading-none opacity-80"&gt;Being developed&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>` : `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="absolute top-4 right-4 bg-cyan-500/20 border border-cyan-400/50 text-cyan-100 px-3 py-1.5 rounded-lg backdrop-blur-md z-20 flex flex-col items-center text-center shadow-[0_0_20px_rgba(34,211,238,0.6)] pointer-events-none animate-pulse"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[10px] sm:text-xs font-bold leading-none mb-1 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"&gt;Baharu&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="text-[9px] sm:text-[10px] italic leading-none text-cyan-200"&gt;New&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>`}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="mb-4"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;span class="inline-block px-3 py-1 bg-pink-500/20 text-pink-300 border border-pink-500/30 rounded-lg text-sm font-bold mb-3"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>Eksperimen ${exp.code}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-grow mb-6 pr-20"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-base sm:text-lg text-white font-bold mb-2 leading-snug"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>${exp.bm}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm sm:text-base text-gray-400 italic leading-snug"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>${exp.en}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="mt-auto pt-4 border-t border-white/5"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button onclick="window.handleProtectedAction('modul', '${exp.url}')" class="w-full flex justify-center items-center py-3 px-4 rounded-xl bg-pink-500/10 hover:bg-pink-500/20 transition-colors text-sm group/btn border border-pink-500/30"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center gap-2"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;i data-lucide="play" class="text-pink-400 w-4 h-4"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span class="font-bold text-pink-200 group-hover/btn:text-pink-100"&gt;Jalankan Eksperimen &lt;span class="italic text-pink-300/60 font-normal"&gt;Run Experiment&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>`).join('');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (window.lucide) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>window.lucide.createIcons();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Inisialisasi aplikasi saat dimuat</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.addEventListener('DOMContentLoaded', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>initApp();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (window.lucide) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>window.lucide.createIcons();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
